@@ -6,6 +6,7 @@ Post-Installation script for Ubuntu / Pop OS. I made this program to install all
 Paste following command to get the files.
 
 ```git
+cd $HOME
 git clone https://github.com/s3h4n/aligator.git
 ```
 
