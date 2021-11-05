@@ -19,5 +19,9 @@ sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 chsh -s /usr/bin/fish
 
 # setup starship prompt with fish
-cp -r ../config/fish.config ~/.config/fish/
-cp -r ../config/starship.toml ~/.config/
+cd 
+cd ~/aligator
+cd config
+cp -r fish.config ~/.config/fish/
+cp -r starship.toml ~/.config/
+cd ..
