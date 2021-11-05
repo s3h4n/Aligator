@@ -23,4 +23,7 @@ cd ~/aligator
 cd config
 cp -r fish.config ~/.config/fish/
 cp -r starship.toml ~/.config/
+
+# dracula color theme for fish
+cp -r dracula.fish ~/.config/fish/conf.d
 cd ..
