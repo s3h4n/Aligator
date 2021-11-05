@@ -1,4 +1,4 @@
-# Aligator
+# Aligator 🐊
 Post-Installation script for Ubuntu / Pop OS. I made this program to install all of my favourite linux applications/themes easily.
 
 ## Installation
