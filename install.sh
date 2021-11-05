@@ -47,9 +47,9 @@ confirm
 
 # install
 bash src/tools_01_basic.sh
-bash tools_02_programming.sh
-bash tools_03_web.sh
-bash tools_04_cli.sh
-bash tools_05_theme.sh
+bash src/tools_02_programming.sh
+bash src/tools_03_web.sh
+bash src/tools_04_cli.sh
+bash src/tools_05_theme.sh
 
 #EOF
