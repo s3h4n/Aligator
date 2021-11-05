@@ -52,4 +52,8 @@ bash src/tools_03_web.sh
 bash src/tools_04_cli.sh
 bash src/tools_05_theme.sh
 
+clear
+bash src/header.sh
+echo "Done ! (Please setup theme and the icon pack in tweak-tool.)"
+
 #EOF
