@@ -23,3 +23,4 @@ cd ~/aligator
 cd config
 cp -r fish.config ~/.config/fish/
 cp -r starship.toml ~/.config/
+cd ..
