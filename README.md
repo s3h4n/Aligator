@@ -3,13 +3,15 @@ Post-Installation script for Ubuntu / Pop OS. I made this program to install all
 
 ## Installation
 
-Use the git clone command to get this file.
+Paste following command to get the files.
 
 ```git
 git clone https://github.com/s3h4n/aligator.git
 ```
 
 ## Usage
+
+Paste following commands to run the setup.
 
 ```bash
 cd aligator
