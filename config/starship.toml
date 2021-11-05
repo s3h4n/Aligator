@@ -1,4 +1,4 @@
-#blank line between shell prompts
+# blank line between shell prompts
 add_newline = true
 
 # All of below configs are made by AYO-Ryuki. I do not own them.

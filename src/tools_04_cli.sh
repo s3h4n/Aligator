@@ -19,7 +19,6 @@ sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 chsh -s /usr/bin/fish
 
 # setup starship prompt with fish
-cd 
 cd ~/aligator
 cd config
 cp -r fish.config ~/.config/fish/

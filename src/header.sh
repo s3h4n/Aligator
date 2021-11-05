@@ -13,6 +13,7 @@
 # define Banner
 banner ()
 {
+    tput setaf 2;
     echo " "
     echo "            .-._   _ _ _ _ _ _ _ _ "
     echo " .-''-.__.-'00  '-' ' ' ' ' ' ' ' '-."
@@ -23,17 +24,20 @@ banner ()
     echo "                             (((-'\ .' / "
     echo " Aligator v1.0             _____..'  .' "
     echo " Author:S3H4N             '-._____.-' "
+    tput sgr0 ;  
 }
 
 # define banner text
 bannerText1 ()
 {
+    tput setaf 3;
     echo " ========================================================="
     echo " I made this program to install all of my favourite linux" 
     echo " applications/themes easily."   
     echo " "
     echo " Only Recommended for Gnome users :)"
     echo " ========================================================"
+    tput sgr0;
 }
 
 banner

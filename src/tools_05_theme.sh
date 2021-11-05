@@ -11,12 +11,13 @@
 #                   
 
 # create directories for themes and icons
+cd ~/aligator
 mkdir -p ~/.themes ~/.icons
 
 # get dracula theme and tela icon pack
-cd Downloads
 git clone https://github.com/dracula/gtk.git
 git clone https://github.com/vinceliuice/Tela-icon-theme.git
+git clone https://github.com/dracula/gnome-terminal
 
 # add dracula theme to the .theme directory 
 mv gtk gtk-master
@@ -29,13 +30,10 @@ gsettings set org.gnome.desktop.wm.preferences theme "Dracula"
 # add tela icon theme to the .icon directory : to activate use gnome tweaks
 cd Tela-icon-theme
 ./install.sh -d ~/.icons
+cd ..
 
 # install and setup dracula theme for terminal
-cd ..
-git clone https://github.com/dracula/gnome-terminal
 cd gnome-terminal
 ./install.sh
-
-# goto home
-cd 
+cd ..
 

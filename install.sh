@@ -52,8 +52,15 @@ bash src/tools_03_web.sh
 bash src/tools_04_cli.sh
 bash src/tools_05_theme.sh
 
+# Finals
 clear
 bash src/header.sh
-echo "Done ! (Please setup theme and the icon pack in tweak-tool.)"
+echo " Installation successfully completed ! "
+echo " "
+echo " (Please setup theme and the icon pack by using tweak tool.)"
+echo " "
+
+# open gnome tweaks
+gnome-tweaks
 
 #EOF

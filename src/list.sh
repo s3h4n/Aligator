@@ -18,7 +18,7 @@ banner01()
     echo "	 03. Gnome Tweaks - Customize Gnome DE"
     echo "	 04. Stacer - GUI System Monitor and Cleaner"
     echo "	 10. Timeshift - Backup Service"
-    echo "	 05. Git - Git"
+    echo "	 05. Alacritty - Alacritty Terminal"
     echo "	 06. Tor - Tor Service"
     echo "	 07. Synaptic - Synaptic Package Manager"
     echo "	 08. Net Tools - Network Tools"
