@@ -1,5 +1,5 @@
 # Aligator 🐊
-Post-Installation script for Ubuntu / Pop OS. I made this program to install all of my favourite linux applications/themes easily.
+Post-Installation script for Ubuntu / Pop OS. I made this program to install most of my favourite Linux applications/themes easily.
 
 - This will change your current theme to **Dracula.**
 - This will change your current icons to **Tela.**
