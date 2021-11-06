@@ -51,8 +51,8 @@ Post-Installation script for Ubuntu / Pop OS. I made this program to install mos
 
 First upgrade the system and install git.
 ```git
-sudo apt-update
-sudo apt-upgrade
+sudo apt update
+sudo apt upgrade
 sudo apt install git
 ```
 Go to home directory and clone this repository.
