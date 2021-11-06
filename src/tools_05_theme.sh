@@ -29,7 +29,7 @@ gsettings set org.gnome.desktop.wm.preferences theme "Dracula"
 
 # add tela icon theme to the .icon directory : to activate use gnome tweaks
 cd Tela-icon-theme
-./install.sh -d ~/.icons
+./install.sh -a -d ~/.icons
 cd ..
 
 # install and setup dracula theme for terminal

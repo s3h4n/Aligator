@@ -16,5 +16,6 @@ cargo install alacritty
 
 cd ~/aligator
 cd config
+mkdir ~/.config/alacritty
 cp -r alacritty.yml ~/.config/alacritty/
 cd ..

@@ -21,6 +21,8 @@ chsh -s /usr/bin/fish
 # setup starship prompt with fish
 cd ~/aligator
 cd config
+mkdir ~/.config/fish
+mkdir ~/.config/fish/conf.d 
 cp -r fish.config ~/.config/fish/
 cp -r starship.toml ~/.config/
 
