@@ -31,7 +31,6 @@ echo " "
 # update-upgrade system
 sudo apt -y update
 sudo apt -y install software-properties-common 
-sudo apt -y upgrade
 
 # show banner
 clear
