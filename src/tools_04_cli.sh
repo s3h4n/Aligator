@@ -24,6 +24,7 @@ cd config
 mkdir ~/.config/fish
 mkdir ~/.config/fish/conf.d 
 cp -r fish.config ~/.config/fish/
+cp -r fish.config ~/.config/fish/config.fish
 cp -r starship.toml ~/.config/
 
 # dracula color theme for fish
