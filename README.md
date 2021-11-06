@@ -7,7 +7,7 @@ Post-Installation script for Ubuntu / Pop OS. I made this program to install mos
 - This will change your current shell prompt to **Starship.**
 - This will install several other applications/tools.
 
-## Programs List
+## Programs List ✔️
 **Basic Tools :**
   - Preload - System Boost
   - Ubuntu Extras - Media Codecs and Fonts
@@ -47,22 +47,27 @@ Post-Installation script for Ubuntu / Pop OS. I made this program to install mos
   - Dracula Terminal Theme    
 
 
-## Installation
+## Installation ✨
 
-Paste following command to get the files.
-
+First upgrade the system and install git.
 ```git
+sudo apt-update
+sudo apt-upgrade
+sudo apt install git
+```
+Go to home directory and clone this repository.
+```bash
 cd $HOME
 git clone https://github.com/s3h4n/aligator.git
 ```
 
-The paste following commands to run the setup.
-
+Go to the cloned directory and run install file.
 ```bash
 cd aligator
 bash install.sh
 ```
-## After Installation
+
+## After Installation 🔥
 
 Please do the follwing things,
 - Install this extension to load custom themes to shell,
@@ -73,7 +78,7 @@ Please do the follwing things,
   - Shell theme to **gtk-master**
 - Then **logout** and **log back** to your system. 
 
-## Contributing
+## Contributing 🤝
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
