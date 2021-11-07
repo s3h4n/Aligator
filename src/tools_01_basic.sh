@@ -11,9 +11,14 @@
 #                   
 
 # install
-sudo apt -y install preload ubuntu-restricted-extras gnome-tweak-tool stacer timeshift cargo tor synaptic net-tools wget curl dconf-cli
-cargo install alacritty
+sudo apt -y install preload ubuntu-restricted-extras gnome-tweak-tool stacer timeshift tor synaptic net-tools wget curl dconf-cli
 
+# install alacritty terminal
+sudo add-apt-repository ppa:mmstick76/alacritty 
+sudo apt update
+sudo apt -y install alacritty
+
+# add alacritty config file
 cd ~/aligator
 cd config
 mkdir ~/.config/alacritty
