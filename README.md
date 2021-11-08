@@ -74,7 +74,7 @@ Please do the follwing things,
   - https://extensions.gnome.org/extension/19/user-themes/
 - Use Gnome-Tweak-Tool to Set, 
   - Current theme to **gtk-master**
-  - Icon theme to **Tela-Dark**
+  - Icon theme to **Tela-Purple-Dark**
   - Shell theme to **gtk-master**
 - Then **logout** and **log back** to your system. 
 
