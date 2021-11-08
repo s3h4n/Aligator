@@ -12,60 +12,69 @@
 
 banner01()
 {
-    echo " Basic Tools :"
-    echo "	 01. Preload - System Boost"
-    echo "	 02. Ubuntu Extras - Media Codecs and Fonts"
-    echo "	 03. Gnome Tweaks - Customize Gnome DE"
-    echo "	 04. Stacer - GUI System Monitor and Cleaner"
-    echo "	 05. Timeshift - Backup Service"
-    echo "	 06. Alacritty - Alacritty Terminal"
-    echo "	 07. Tor - Tor Service"
-    echo "	 08. Synaptic - Synaptic Package Manager"
-    echo "	 09. Net Tools - Network Tools"
-    echo "	 10. Wget - Download tool"
-    echo "	 11. Curl - Download tool"
-    echo "	 12. D-conf - Configuration tool"
+    tput bold
+    echo " [Basic Tools]"
+    tput sgr0
+    echo "	 01. Preload      : System Boost"
+    echo "	 02. Ubuntu Extras: Media Codecs-Fonts"
+    echo "	 03. Gnome Tweaks : Customize Gnome DE"
+    echo "	 04. Stacer       : GUI System Cleaner"
+    echo "	 05. Timeshift    : Backup Service"
+    echo "	 06. Alacritty    : Simple Terminal"
+    echo "	 07. Tor          : Tor Service"
+    echo "	 08. Synaptic     : Package Manager"
+    echo "	 09. Net Tools    : Network Tools"
+    echo "	 10. Wget         : Download tool"
+    echo "	 11. Curl         : Download tool"
+    echo "	 12. D-conf       : Configuration tool"
     echo " ----------------------------------------------------"
 }
 
 banner02()
 {
-    
-    echo " Programming Tools :"
-    echo "	 13. GCC - GCC Compiler for C"
-    echo "	 14. Clang - Clang for C"
-    echo "	 15. Python - Python3 and Pip3"
+    tput bold
+    echo " [Programming Tools]"
+    tput sgr0
+    echo "	 13. GCC          : GCC Compiler for C"
+    echo "	 14. Clang        : Clang for C"
+    echo "	 15. Python       : Python3 and Pip3"
     echo " ----------------------------------------------------"
 }
 
 banner03()
 {
-    echo " Web Developing Tools :"
-    echo "	 16. PHP - PHP 8.0"
-    echo "	 17. Apache2 - Apache Web Server"
-    echo "	 18. MySQL - MySQL Database server"
+    tput bold
+    echo " [Web Developing Tools]"
+    tput sgr0
+    echo "	 16. PHP          : PHP 8.0"
+    echo "	 17. Apache2      : Apache Web Server"
+    echo "	 18. MySQL        : MySQL Database server"
     echo " ----------------------------------------------------"
 }
 
 banner04()
 {
-    echo " Terminal Based Tools :"
-    echo "	 19. Htop -  Terminal Based System Monitor"
-    echo "	 20. Ranger - Terminal Based File Manager"
-    echo "	 21. Fish - Highly Customizable Shell"
-    echo "	 22. Starship - Customizable Shell Prompt"
-    echo "	 23. CMatrix - Matrix Effect"
-    echo "	 24. Figlet - ASCII Banner Tool"
-    echo "	 25. Neofetch - Stylish System Info Tool"    
+    tput bold
+    echo " [Terminal Based Tools]"
+    tput sgr0
+    echo "	 19. Htop         : CLI System Monitor"
+    echo "	 20. Ranger       : CLI File Manager"
+    echo "	 21. Fish         : Highly Customizable Shell"
+    echo "	 22. Starship     : Customizable Shell Prompt"
+    echo "	 23. CMatrix      : Matrix Effect"
+    echo "	 24. Figlet       : ASCII Banner Tool"
+    echo "	 25. Neofetch     : Stylish System Info Tool"    
     echo " ----------------------------------------------------"
 }
 
 banner05()
 {
-    echo " Themes :"
-    echo "	 26. Dracula GTK Theme"
-    echo "	 27. Tela Icon Pack"
-    echo "	 28. Dracula Terminal Theme"    
+    tput bold
+    echo " [Themes]"
+    tput sgr0
+    echo "	 26. Dracula      : GTK Theme"
+    echo "	 27. Tela         : Icon Pack"
+    echo "	 28. Dracula      : Terminal-Theme"    
     echo " ----------------------------------------------------"
 }
 

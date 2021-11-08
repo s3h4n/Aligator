@@ -37,3 +37,6 @@ cd gnome-terminal
 ./install.sh
 cd ..
 
+# install and setup dracula theme for gedit
+wget https://raw.githubusercontent.com/dracula/gedit/master/dracula.xml
+mv dracula.xml $HOME/.local/share/gedit/styles/

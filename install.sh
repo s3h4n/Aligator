@@ -10,15 +10,37 @@
 # Run Information: This script is run automatically by the setup.
 #
 
+list ()
+{
+    # show banner
+    clear
+    bash src/header.sh
+
+    # show list
+    echo " "
+    echo " Following Package Modules will be installed."
+    echo " ----------------------------------------------------"
+    bash src/list.sh
+}
+
 # confirm prompt
-confirm()
+confirm ()
 {
     while true; do
-    read -p " Do you wish to install these programs? y or n: " yn
-        case $yn in
+    echo " "
+    echo " Following options are available,"
+    echo " ----------------------------------------------------"
+    echo "     * $(tput setaf 2)$(tput bold)l (list)$(tput sgr0) - Print list of installing programs"
+    echo "     * $(tput setaf 2)$(tput bold)y (yes)$(tput sgr0)  - Continue to install programs"
+    echo "     * $(tput setaf 2)$(tput bold)n (no)$(tput sgr0)   - Cancel the installation process"
+    echo " ----------------------------------------------------"
+    read -p " Please select an option : " ynl
+    echo " ----------------------------------------------------"
+        case $ynl in
+            [Ll]* ) list;;
             [Yy]* ) break;;
             [Nn]* ) exit;;
-            * ) echo " Please answer yes or no.";;
+            * ) echo " "; echo " Please answer yes-(y) or no-(n) or list-(l).";;
         esac
     done
 }
@@ -36,11 +58,6 @@ sudo apt -y install software-properties-common
 clear
 bash src/header.sh
 
-# show list
-echo " Following Package Modules will be installed."
-echo " ----------------------------------------------------"
-bash src/list.sh
-
 # confirmation
 confirm
 
@@ -56,8 +73,16 @@ clear
 bash src/header.sh
 echo " Installation successfully completed ! "
 echo " "
-echo " (Please setup theme and the icon pack by using tweak tool.)"
-echo " "
+echo " Please do these tasks after the installation."
+echo "     $(tput bold)01. Install this extension to load custom themes to shell,$(tput sgr0)"
+echo "            -> https://extensions.gnome.org/extension/19/user-themes/"
+echo "     $(tput bold)02. Use Gnome-Tweak-Tool to Set,$(tput sgr0)"
+echo "            -> Current theme to gtk-master"
+echo "            -> Icon theme to Tela-Purple-Dark"
+echo "            -> Shell theme to gtk-master"
+echo "     $(tput bold)03. Then logout and log back to your system.$(tput sgr0)"
+echo ""
+echo " $(tput bold)Thank You!$(tput sgr0)"
 
 # open gnome tweaks
 gnome-tweaks
