@@ -196,18 +196,12 @@ class Handler:
 
             for line in instructions_set:  # for loop -> for each package in package set
 
-                if (cmd.find_apt(tool) == 0):  # if package is pre-installed -> skip
+                print(f"\nInstall {tool} ? Y/N ")
 
-                    print(f"\n{g}{tool} has found.{e}\nSkipping...")
+                # state = o -> success
+                state = cmd.other(line)
 
-                else:  # else -> continue to install
-
-                    print(f"\nInstalling {tool}...")
-
-                    # state = o -> success
-                    state = cmd.other(line)
-
-                    print(f"{g}Done{e}" if (state == 0) else f"{r}Failed{e}")
+                print(f"{g}Done{e}" if (state == 0) else f"{r}Failed{e}")
 
         index = 0
 

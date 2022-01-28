@@ -113,7 +113,7 @@ APT_TOOLS = {
 OTHER_TOOLS = {
 
     "starship": [
-        "sh -c '$(curl - fsSL https: // starship.rs/install.sh)'",
+        'sh -c "$(curl -fsSL https://starship.rs/install.sh)"',
     ],
 
 }
