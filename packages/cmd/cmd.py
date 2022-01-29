@@ -247,3 +247,26 @@ class Command:
         except:
 
             return 1  # failure
+
+    def open_app(self, app_name, command) -> int:
+        """
+            * declaring method open_app()
+                - opens any pre-installed application with a command.
+
+            * @param self
+            * @param app_name -> name of the application
+            * @param command  -> command that needs to be run from the application
+
+            * @return int
+        """
+
+        try:
+
+            result = run(f"{app_name} {command}", shell=True,
+                         capture_output=True, text=True)
+
+            return result.returncode  # success = 0
+
+        except:
+
+            return 1  # failure

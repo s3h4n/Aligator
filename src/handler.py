@@ -199,7 +199,7 @@ class Handler:
                 print(f"\nInstall {tool} ? Y/N ")
 
                 # state = o -> success
-                state = cmd.other(line)
+                state = cmd.open_app("x-terminal-emulator",line)
 
                 print(f"{g}Done{e}" if (state == 0) else f"{r}Failed{e}")
 
