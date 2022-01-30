@@ -1,8 +1,5 @@
-"""
-    * @import module Build from packages/build/build.py
-    * @import module Command from packages/cmd/cmd.py
-"""
-
-
-from .build import Build
-from .cmd import Command
+from .commands import File
+from .commands import Get
+from .commands import Find
+from .views import Color
+from .views import View
