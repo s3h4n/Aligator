@@ -1,82 +1,39 @@
 # Aligator 🐊
-Post-Installation script for Ubuntu / Pop OS. I made this program to install most of my favourite Linux applications/themes easily.
 
-- This will change your current theme to **Dracula.**
-- This will change your current icons to **Tela.**
+Post-Installation script for Ubuntu / Pop OS. I made this program to install most of my favourite Linux packages easily.
+
 - This will change your current shell to **Fish shell.**
 - This will change your current shell prompt to **Starship.**
-- This will install several other applications/tools.
+- This will change your current terminal to **Kitty.**
+- This will also install several other applications/tools.
 
-## Programs List ✔️
-**Basic Tools :**
-  - Preload - System Boost
-  - Ubuntu Extras - Media Codecs and Fonts
-  - Gnome Tweaks - Customize Gnome DE
-  - Stacer - GUI System Monitor and Cleaner
-  - Timeshift - Backup Service
-  - Alacritty - Alacritty Terminal
-  - Tor - Tor Service
-  - Synaptic - Synaptic Package Manager
-  - Net Tools - Network Tools
-  - Wget - Download tool
-  - Curl - Download tool
-  - D-conf - Configuration tool
- 
- **Programming Tools :**
-  - GCC - GCC Compiler for C
-  - Clang - Clang for C
-  - Python - Python3 and Pip3
+## Whats New ? 🚀  
 
-**Web Developing Tools :**
-  - PHP - PHP 8.0
-  - Apache2 - Apache Web Server
-  - MySQL - MySQL Database server
-
-**Terminal Based Tools :**
-  - Htop -  Terminal Based System Monitor
-  - Ranger - Terminal Based File Manager
-  - Fish - Highly Customizable Shell
-  - Starship - Customizable Shell Prompt
-  - CMatrix - Matrix Effect
-  - Figlet - ASCII Banner Tool
-  - Neofetch - Stylish System Info Tool    
-
-**Themes :**
-  - Dracula GTK Theme
-  - Tela Icon Pack
-  - Dracula Terminal Theme    
-
+### 30.01.2022 <br/>
+Program was re-structured and re-wrote in python. Now its easier to navigate and change as you need.
+* Removed auto theme installing feature.
+* Added few new packages.
+  * Neovim
+  * VimPlugin
+  * NPM
+  * NodeJS
+  * JDK and JRE (Java)
+  * VLC media player
+  * OBS studio
+  * Kitty terminal
+* New application UI.
+* Kitty terminal replaced with alacritty.
 
 ## Installation ✨
 
-First upgrade the system and install git.
-```git
-sudo apt update
-sudo apt upgrade
-sudo apt install git
-```
-Go to home directory and clone this repository.
+Clone this repository.
 ```bash
-cd $HOME
 git clone https://github.com/s3h4n/aligator.git
 ```
-
-Go to the cloned directory and run install file.
-```bash
-cd aligator
-bash install.sh
+Install using Python. (Version 3.6+ Required)
+```python
+python3 -m install aligator
 ```
-
-## After Installation 🔥
-
-Please do the follwing things,
-- Install this extension to load custom themes to shell,
-  - https://extensions.gnome.org/extension/19/user-themes/
-- Use Gnome-Tweak-Tool to Set, 
-  - Current theme to **gtk-master**
-  - Icon theme to **Tela-Purple-Dark**
-  - Shell theme to **gtk-master**
-- Then **logout** and **log back** to your system. 
 
 ## Contributing 🤝
 

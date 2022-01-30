@@ -34,7 +34,7 @@ class Handler(Color):
 
         self.view.status(state)
 
-        self.view.header("2.1")
+        self.view.header("2.2")
         self.view.pkg_list(pkg_set)
 
         if self.view.user_prompt() == 0:
