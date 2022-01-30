@@ -75,3 +75,18 @@ class View(Color):
 
                 print("\n", "=" * 53, sep="")
                 return 1
+
+    def status(self, state: int) -> None:
+        """
+        status will print success or error message.
+
+        Args:
+            state (int): 1 -> Success, 0 -> Failure
+        """
+
+        if state == 0:
+            print(f"\n✅ {self.LIGHT_GREEN}Successful.")
+        else:
+            (f"\n❌ {self.LIGHT_RED}Failed.")
+
+        print(f"{self.END}")

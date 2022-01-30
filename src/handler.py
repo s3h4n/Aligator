@@ -5,6 +5,7 @@ from ..packages import Color
 from ..packages import View
 from .constants import PKG_SET as pkg_set
 from .constants import REPO_SET as repos
+from .constants import CONFIGS as configs
 
 
 class Handler(Color):
@@ -31,12 +32,7 @@ class Handler(Color):
 
         state = self.get.update_pkg()
 
-        print(
-            f"\n✅ {self.LIGHT_GREEN}Successful."
-            if (state == 0)
-            else f"\n❌ {self.LIGHT_RED}Failed.",
-            f"{self.END}",
-        )
+        self.view.status(state)
 
         self.view.header("2.1")
         self.view.pkg_list(pkg_set)
@@ -45,6 +41,8 @@ class Handler(Color):
 
             self.repo_adder()
             self.pkg_adder()
+            self.file_adder()
+            self.config_maker()
 
     def repo_adder(self) -> None:
         """
@@ -68,12 +66,7 @@ class Handler(Color):
 
                 state = self.get.apt_repo(repo_name)
 
-                print(
-                    f"\n✅ {self.LIGHT_GREEN}Successful."
-                    if (state == 0)
-                    else f"\n❌ {self.LIGHT_RED}Failed.",
-                    f"{self.END}",
-                )
+                self.view.status(state)
 
     def pkg_adder(self) -> None:
         """
@@ -92,12 +85,7 @@ class Handler(Color):
 
                     state = self.get.anything(pkg[3])
 
-                    print(
-                        f"\n✅ {self.LIGHT_GREEN}Successful."
-                        if (state == 0)
-                        else f"\n❌ {self.LIGHT_RED}Failed.",
-                        f"{self.END}",
-                    )
+                    self.view.status(state)
 
                 else:
 
@@ -105,12 +93,7 @@ class Handler(Color):
 
                     state = self.get.apt_pkg(pkg[1])
 
-                    print(
-                        f"\n✅ {self.LIGHT_GREEN}Successful."
-                        if (state == 0)
-                        else f"\n❌ {self.LIGHT_RED}Failed.",
-                        f"{self.END}",
-                    )
+                    self.view.status(state)
 
     def file_adder(self) -> None:
         """
@@ -133,3 +116,14 @@ class Handler(Color):
         self.get.anything(
             "sudo update-alternatives --set x-terminal-emulator /usr/bin/kitty"
         )  # set kitty terminal as default.
+
+        for config in configs:
+
+            url = configs[config][0]
+            path = configs[config][1]
+
+            print(f"{self.BOLD}Creating configurations for {config}...{self.END}")
+
+            state = self.get.from_net(url, path)
+
+            self.view.status(state)

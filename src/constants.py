@@ -113,3 +113,31 @@ PKG_SET = {
         ["Fish", "fish", "Friendly interactive shell"],
     ],
 }
+
+
+CONFIGS = {
+    "bashrc": [
+        "https://raw.githubusercontent.com/s3h4n/aligator/main/configs/.bashrc",
+        "~/",
+    ],
+    "cofig.fish": [
+        "https://raw.githubusercontent.com/s3h4n/aligator/main/configs/config.fish",
+        "~/.config/fish/",
+    ],
+    "dracula.conf": [
+        "https://raw.githubusercontent.com/s3h4n/aligator/main/configs/dracula.conf",
+        "~/.config/kitty/",
+    ],
+    "init.vim": [
+        "https://raw.githubusercontent.com/s3h4n/aligator/main/configs/init.vim",
+        "~/.config/nvim/",
+    ],
+    "kitty.conf": [
+        "https://raw.githubusercontent.com/s3h4n/aligator/main/configs/kitty.conf",
+        "~/.config/kitty/",
+    ],
+    "starship.toml": [
+        "https://raw.githubusercontent.com/s3h4n/aligator/main/configs/starship.toml",
+        "~/.config/",
+    ],
+}

@@ -80,7 +80,7 @@ class Get(Execute):
         """
 
         return self.exec_command(
-            f"wget -N -q --show-progress -O {output_path} {url}",
+            f"wget -q --show-progress -O {output_path} {url}",
             hide_output=False,
         ).returncode
 
