@@ -10,7 +10,7 @@ class Execute:
     def __init__(self) -> None:
         pass
 
-    def exec_command(self, command: str, hide_output: bool = False) -> function:
+    def exec_command(self, command: str, hide_output: bool = False) -> object:
         """
         exec_command will run any given linux shell command.
 
