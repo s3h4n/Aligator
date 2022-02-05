@@ -18,7 +18,7 @@ Program was re-structured and re-wrote in python. Now its easier to navigate and
   * NPM
   * NodeJS
   * JDK and JRE (Java)
-  * VLC media player
+  * MPV media player
   * OBS studio
   * Kitty terminal
 * New application UI.

@@ -59,7 +59,7 @@ PKG_SET = {
         ["Openjdk-18-jre", "openjdk-18-jre", "OpenJDK Java runtime"],
     ],
     "Entertainment": [
-        ["Vlc", "vlc", "Multimedia player and streamer"],
+        ["Mpv", "mpv", "Video player based on MPlayer/mplayer2"],
         [
             "Ffmpeg",
             "ffmpeg",
