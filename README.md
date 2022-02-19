@@ -28,11 +28,11 @@ Program was re-structured and re-wrote in python. Now its easier to navigate and
 
 Clone this repository.
 ```bash
-git clone https://github.com/s3h4n/aligator.git
+git clone https://github.com/s3h4n/Aligator.git
 ```
 Install using Python. (Version 3.6+ Required)
 ```python
-python3 -m install aligator
+python3 -m install Aligator
 ```
 
 ## Contributing 🤝
